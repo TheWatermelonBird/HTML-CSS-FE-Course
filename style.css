@@ -1,4 +1,17 @@
 html, body {
      background-color: black;
      color: whitesmoke;
+     font-family: 'Anonymous Pro', monospace;
+}
+
+.portrait {
+     height: auto;
+     width: 70%;
+   /* even more control with max-width */
+     max-width: 720px;
+}
+
+.highlighted-text {
+     color: maroon;
+     font-weight: 700;
 }
