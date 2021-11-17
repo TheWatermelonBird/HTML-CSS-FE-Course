@@ -80,20 +80,23 @@ a:active {
      font-weight: 700;
 }
 
-.about {
+.flex-cards {
      display: flex;
      align-content: center;
      justify-content: space-evenly;
      flex-wrap: wrap;
-     column-gap: 100px;
+     column-gap: 5%;
      margin: 0 auto;
-     padding-top: 60px;
-     max-width: 1440px;
+     max-width: 85%;
 }
 
-.about-text {
+.flex-card {
      display: inline-block;
      max-width: 400px;
+}
+
+.about {
+     padding-top: 60px;
 }
 
 .jobs {
@@ -176,6 +179,20 @@ a:active {
      top: -85%;
 }
 
+.achievement {
+     position: relative;
+}
+
+.achievement:before {
+     position: absolute;
+     content: '\2726';
+     font-size: 40px;
+     color: maroon;
+     top: -8px;
+     left: -50px;
+}
+
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
@@ -186,8 +203,14 @@ a:active {
      p {
           font-size: 1rem;
      }
-     .about-text {
+     .flex-cards {
+          column-gap: 100px;
+     }
+     .flex-card {
           max-width: 250px;
+     }
+     .job-cards {
+          margin-left: 35%;
      }
 }
 
@@ -205,11 +228,33 @@ a:active {
      .about {
           padding-top: 30px;
      }
+     .job-cards {
+          margin-left: 30%;
+     }
+     .achievement:before {
+          position: absolute;
+          content: '\2726';
+          font-size: 30px;
+          color: maroon;
+          top: -8px;
+          left: -40px;
+     }
 }
 
 @media screen and (max-width: 480px) {
      .header-navigation {
           width: calc(100% - 20px);
           gap: 0px 5px;
+     }
+     .job-cards {
+          margin-left: 15%;
+     }
+     .achievement:before {
+          position: absolute;
+          content: '\2726';
+          font-size: 30px;
+          color: maroon;
+          top: -8px;
+          left: -30px;
      }
 }
