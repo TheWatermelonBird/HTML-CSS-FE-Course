@@ -1,3 +1,8 @@
+*, *:before, *:after {
+     box-sizing: border-box;
+   }
+   
+
 html, body {
      background-color: black;
      color: whitesmoke;
@@ -13,12 +18,26 @@ body {
     position: relative;
 }
 
-p {
+p, label {
      font-size: 1.5rem;
 }
 
 h1 {
      font-size: 5rem;
+}
+
+.intro-text {
+     animation: 2s slide-right;
+}
+   
+@keyframes slide-right {
+from {
+     margin-left: -100%;
+}
+
+to {
+     margin-left: 0%;
+}
 }
 
 nav {
@@ -41,6 +60,10 @@ a:hover {
 a:active {
      text-decoration: none;
      color: rgb(80, 0, 0);
+}
+
+section {
+     padding-bottom: 40px;
 }
 
 .header-navigation {
@@ -93,14 +116,6 @@ a:active {
 .flex-card {
      display: inline-block;
      max-width: 400px;
-}
-
-.about {
-     padding-top: 60px;
-}
-
-.jobs {
-     padding-top: 40px;
 }
 
 .job-cards {
@@ -192,6 +207,58 @@ a:active {
      left: -50px;
 }
 
+.contacts h2 {
+     font-size: 2em;
+     text-align: center;
+}
+
+form {
+     width: 50%;
+     margin: 0 auto;
+}
+
+textarea {
+     width:100%;
+     resize: vertical;
+     color: whitesmoke;
+     background-color: black;
+     padding: 15px;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     margin-left: 5px;
+     border-radius: 15px;
+     border: 1px solid whitesmoke;
+     height: 150px;
+}
+
+input[type=text] {
+     width: 100%;
+     padding: 10px;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     margin-left: 5px;
+     color: whitesmoke;
+     background-color: black;
+     border: 1px solid whitesmoke;
+     border-radius: 15px;
+}
+
+input[type=submit] {
+     font-size: 2em;
+     padding: 10px 5%;
+     display: block;
+     margin: 0 auto;
+     width: 40%;
+     border: 0;
+     color: whitesmoke;
+     background-color: maroon;
+     border-radius: 15px;
+}
+
+footer p {
+     font-size: 1rem;
+}
+
 
 /* MEDIA QUERIES */
 
@@ -212,6 +279,9 @@ a:active {
      .job-cards {
           margin-left: 35%;
      }
+     form {
+          width: 60%;
+     }
 }
 
 @media screen and (max-width: 600px) {
@@ -225,9 +295,6 @@ a:active {
      p {
           font-size: 1rem;
      }
-     .about {
-          padding-top: 30px;
-     }
      .job-cards {
           margin-left: 30%;
      }
@@ -238,6 +305,9 @@ a:active {
           color: maroon;
           top: -8px;
           left: -40px;
+     }
+     form {
+          width: 85%;
      }
 }
 

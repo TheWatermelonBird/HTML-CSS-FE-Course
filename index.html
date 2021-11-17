@@ -8,6 +8,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
      <link rel="stylesheet" href="./normalize.css">
      <link rel="stylesheet" href="./style.css">
@@ -88,15 +89,25 @@
           <p class="achievement flex-card">Russian, Belarusian — Native<br>English — C1<br>Polish — B1<br>Swedish — A2</p>
      </section>
 
-     <section class="contacts" id="contacts"></section>
-
+     <section class="contacts" id="contacts">
+     <h2>Let's get in touch!</h2>
+          <form action="mailto:northernwind@tut.by" method="post" enctype="text/plain">
+               <label for="name">First Name</label>
+               <input type="text" id="name" name="name" placeholder="Your name...">
+               <label for="email">Email</label>
+               <input type="text" id="email" name="email">
+               <label for="message">Message</label>
+               <textarea id="message" name="message"></textarea>
+               <input type="submit" value="Send">
+          </form>
+     </section>
      <footer>
           <p>© TheWatermelonBird</p>
           <li class="social-media">
-               <ul class="linkedin"></ul>
-               <ul class="telegram"></ul>
-               <ul class="facebook"></ul>
-               <ul class="twitter"></ul>
+               <ul class="linkedin"><a href=""></a></ul>
+               <ul class="telegram"><a href=""></a></ul>
+               <ul class="facebook"><a href=""></a></ul>
+               <ul class="twitter"><a href=""></a></ul>
           </li>
      </footer>
 </body>
