@@ -18,7 +18,7 @@ p {
 }
 
 h1 {
-     font-size: 5em;
+     font-size: 5rem;
 }
 
 nav {
@@ -80,3 +80,54 @@ a:active {
      font-weight: 700;
 }
 
+.about {
+     display: flex;
+     align-content: center;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+     column-gap: 100px;
+     margin: 0 auto;
+     padding-top: 60px;
+     max-width: 1440px;
+}
+
+.about-text {
+     display: inline-block;
+     max-width: 400px;
+}
+
+@media screen and (max-width: 1024px) {
+     h1 {
+          font-size: 3rem;
+     }
+     
+     p {
+          font-size: 1rem;
+     }
+     .about-text {
+          max-width: 250px;
+     }
+}
+
+@media screen and (max-width: 600px) {
+     html, body {
+          font-size: 12px;
+     }
+     h1 {
+          font-size: 2rem;
+     }
+     
+     p {
+          font-size: 1rem;
+     }
+     .about {
+          padding-top: 30px;
+     }
+}
+
+@media screen and (max-width: 480px) {
+     .header-navigation {
+          width: calc(100% - 20px);
+          gap: 0px 5px;
+     }
+}
